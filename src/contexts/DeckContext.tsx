@@ -34,6 +34,7 @@ export const DeckContextProvider = ({ children }: { children: ReactNode }) => {
     const [cardPulls, setCardPulls] = useState<CardPull[] | null>(null);
     const [cardsPulled, setCardsPulled] = useState<boolean>(false);
 
+    // https://deckofcardsapi.com/
     const fetchDeck = async () => {
         const response = await fetch('https://deckofcardsapi.com/api/deck/new/shuffle/?deck_count=1&jokers_enabled=true');
         const data = await response.json();
