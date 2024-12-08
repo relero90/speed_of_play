@@ -1,0 +1,6 @@
+.DS_Store
+README.md
+package-lock.json
+.env
+.env.dev
+node_modules
